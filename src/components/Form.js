@@ -5,7 +5,7 @@ function Form(props) {
   const handleChange = (e) => setName(e.target.value);
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(name != '')
+    if(name !== '')
       props.addTask(name);
     else
       alert('No task has been wrote.')
